@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youtube clone</title>
+  <link rel="stylesheet" href="output.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body class="grid grid-cols-[1fr_4fr] font-serif relative">
+
+  <!-- Sidebar -->
+
+  <div class="sticky top-0">
+    <!-- logo section -->
+
+    <div class="flex gap-5 px-8 py-4 sticky top-0 left-0 w-full bg-neutral-50 z-10">
+      <span><i class="fa-solid fa-bars"></i></span><img src="/src/img/logo.svg" alt="YouTube Logo">
+    </div>
+    <!-- home Section -->
+    <div class="hover:overflow-y-auto h-screen bg-neutral-50">
+      <ul class="p-6">
+        <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 hover:active:font-bold rounded-lg">
+          <span class=""><i class="fa-regular fa-house"></i></span>
+          <li class="max-md:hidden"> Home</li>
+        </a>
+        <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+          <span class=""><i class="fa-brands fa-square-youtube"></i></span>
+          <li class="max-md:hidden"> Shorts</li>
+        </a>
+        <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 hover:active:font-bold rounded-lg">
+          <span class=""><i class="fa-solid fa-tv"></i></span>
+          <li class="max-md:hidden"> Subscriptions</li>
+        </a>
+        <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 hover:active:font-bold rounded-lg">
+          <span class=""><i class="fa-regular fa-user"></i></span>
+          <li class="max-md:hidden"> You</li>
+        </a>
+        <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 hover:active:font-bold rounded-lg">
+          <span class=""><i class="fa-regular fa-clock"></i></span>
+          <li class="max-md:hidden"> History</li>
+        </a>
+      </ul>
+      <div class="p-6 border-y border-gray-300">
+        <p>Sign in to like videos,</p>
+        <p class="mb-4">comment, and subscribe.</p>
+        <a href="#"
+          class="text-sky-700 font-bold px-4 py-2 rounded-full hover:bg-sky-100 border border-neutral-200"><span><i
+              class="fa-regular fa-user"></i></span>Sign in</a>
+      </div>
+      <!-- Explore Section -->
+      <div class="p-6">
+        <h2 class="text-lg font-medium mb-4">Explore</h2>
+        <ul>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-headphones"></i></span>
+            <li class="max-md:hidden"> Music</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-gamepad"></i></span>
+            <li class="max-md:hidden"> Gaming</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-newspaper"></i></span>
+            <li class="max-md:hidden"> News</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-football"></i></span>
+            <li class="max-md:hidden"> Sports</li>
+          </a>
+        </ul>
+      </div>
+      <!-- More from youtube Section -->
+      <div class="p-6 border-y border-gray-300">
+        <h2 class="text-lg font-medium mb-4">More from YouTube</h2>
+        <ul>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-brands fa-youtube"></i></span>
+            <li class="max-md:hidden"> YouTube Premium</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-brands fa-youtube"></i></span>
+            <li class="max-md:hidden">YouTube Music</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-brands fa-youtube"></i></span>
+            <li class="max-md:hidden"> YouTube Kids</li>
+          </a>
+        </ul>
+      </div>
+
+      <!-- settings Section -->
+      <div class="p-6 border-y border-gray-300">
+        <ul>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-gear"></i></span>
+            <li class="max-md:hidden"> Settings</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-flag"></i></span>
+            <li class="max-md:hidden"> Report history</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-question-circle"></i></span>
+            <li class="max-md:hidden"> Help</li>
+          </a>
+          <a href="#" class="flex items-center gap-5 px-2 py-2 hover:bg-neutral-200 rounded-lg">
+            <span class=""><i class="fa-solid fa-comment"></i></span>
+            <li class="max-md:hidden"> Send feedback</li>
+          </a>
+        </ul>
+      </div>
+      <div class="p-6">
+        <p>About Press Copyright <br> Contact us Creators Advertise Developers</p>
+        <p>Terms Privacy Policy & Safety <br> How YouTube works Test new features</p>
+        <p class="mt-4 text-sm">© 2026 Google LLC</p>
+      </div>
+    </div>
+  </div>
+  <!-- main content -->
+
+  <div class="overflow-auto h-screen">
+
+    <!-- nav section search bar -->
+
+    <header class="sticky top-0 left-0 w-s bg-neutral-50 z-10 pt-4">
+      <div class="flex items-center justify-between mb-5 overflow-y-hidden">
+        <div class="flex justify-center ml-20">
+          <input type="text" placeholder="Search"
+            class="border border-neutral-300 w-[34rem] px-3 rounded-l-full focus:outline-none focus:ring-1 focus:ring-sky-500">
+          <button class="border border-neutral-300 px-5 text-2xl font-light mr-4 rounded-r-full bg-neutral-100"><i
+              class="fas fa-search"></i></button>
+          <span class="bg-neutral-100 rounded-full p-2"><i class="fas fa-microphone"></i></span>
+        </div>
+        <div class="flex items-center gap-6 w-5/6 justify-center">
+          <span><i class="fa-solid fa-list"></i></span>
+          <a href="#"
+            class="text-sky-700 font-bold px-4 py-2 rounded-full hover:bg-sky-100 border border-neutral-200"><span><i
+                class="fas fa-user"></i></span>Sign in
+          </a>
+        </div>
+      </div>
+      <!-- nav links -->
+
+      <div>
+        <ul class="flex gap-4 hover:overflow-auto w-screen text-sm ">
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> All</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> News</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Podcasts</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Nollywood</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Live</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Debates</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Thrillers</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Democracy</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> league</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Media </a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Economics</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#">AI</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Editing</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Righteousness</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Vocabulary</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> History</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Programming</a>
+          </li>
+          <li class="px-3 py-1.5
+            bg-neutral-200 rounded-lg font-bold hover:bg-black hover:text-white"><a href="#"> Gadgets</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- ================content=============== -->
+    <div class="mt-10">
+      <div class="grid grid-cols-3 w-fit gap-6 p-4">
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/bwala.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/news.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/mercy.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/newcastle.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/jason.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="grid grid-cols-5 w-fit gap-6 p-4">
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/bwala.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/news.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/mercy.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/newcastle.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/jason.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="grid grid-cols-5 w-fit gap-6 p-4">
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/bwala.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/news.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/mercy.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/newcastle.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/jason.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+         <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/newcastle.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="bg-neutral-100 hover:scale-105 transition-transform duration-300 hover:bg-neutral-200 rounded-lg overflow-hidden shadow-xl">
+          <img src="/src/img/jason.avif" alt="img1" class="w-full object-cover rounded-xl">
+          <div class="p-2 flex gap-4">
+            <img src="/src/img/aljazeera.jpg" alt="" class="w-12 h-12 rounded-full object-cover">
+            <div>
+              <h3 class="text-xl font-bold">Nigeria: Renewed Hope or Hopelessness?</h3>
+              <p class="text-gray-600">Al Jazeera</p>
+              <p class="text-gray-600">1M views • 1 day ago</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+
+
+    </div>
+
+    
+</body>
+
+</html>
